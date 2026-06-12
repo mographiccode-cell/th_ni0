@@ -1,26 +1,19 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="scroll-smooth">
+<html lang="ar" dir="rtl" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TH_NI0 | محتوى مميز على إنستغرام</title>
-    <meta name="description" content="حساب إنستغرام @th_ni0 - محتوى حصري ومميز. تابعنا للحصول على أحدث المنشورات والصور.">
-    <meta name="keywords" content="th_ni0, إنستغرام, محتوى عربي, حساب مميز">
+    <title>th_ni0 | حساب خاص على إنستغرام</title>
+    <meta name="description" content="حساب إنستغرام خاص - تابعنا للحصول على آخر التحديثات. @th_ni0">
+    <meta name="keywords" content="instagram, th_ni0, حساب خاص, إنستغرام">
     <meta name="author" content="th_ni0">
-    <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="TH_NI0 | محتوى مميز على إنستغرام">
-    <meta property="og:description" content="حساب إنستغرام @th_ni0 - محتوى حصري ومميز. تابعنا للحصول على أحدث المنشورات والصور.">
-    <meta property="og:type" content="website">
+    <meta property="og:title" content="th_ni0 | حساب خاص على إنستغرام">
+    <meta property="og:description" content="حساب إنستغرام خاص - تابعنا للحصول على آخر التحديثات">
+    <meta property="og:type" content="profile">
     <meta property="og:url" content="https://www.instagram.com/th_ni0/">
-    <meta property="og:image" content="https://www.instagram.com/th_ni0/media/">
-    <meta property="og:site_name" content="TH_NI0">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TH_NI0 | محتوى مميز على إنستغرام">
-    <meta name="twitter:description" content="حساب إنستغرام @th_ni0 - محتوى حصري ومميز.">
+    <meta property="og:site_name" content="th_ni0">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,1039 +26,893 @@
                         primary: '#1a1a2e',
                         secondary: '#16213e',
                         accent: '#e94560',
-                        dark: '#0f0f23',
+                        dark: '#0f0f23'
                     },
                     fontFamily: {
-                        tajawal: ['Tajawal', 'sans-serif'],
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'glow': 'glow 2s ease-in-out infinite alternate',
-                        'fadeInUp': 'fadeInUp 0.8s ease-out forwards',
-                        'fadeInDown': 'fadeInDown 0.8s ease-out forwards',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'shimmer': 'shimmer 2s linear infinite',
-                    },
+                        tajawal: ['Tajawal', 'sans-serif']
+                    }
                 }
             }
         }
     </script>
 
-    <!-- Google Fonts: Tajawal -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
 
     <style>
-        * {
-            font-family: 'Tajawal', sans-serif;
-        }
+        * { font-family: 'Tajawal', sans-serif; }
 
-        /* Keyframe Animations */
+        /* Animations */
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-20px); }
         }
-
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(3deg); }
+        }
         @keyframes glow {
-            from { box-shadow: 0 0 20px rgba(233, 69, 96, 0.3); }
-            to { box-shadow: 0 0 40px rgba(233, 69, 96, 0.6), 0 0 60px rgba(233, 69, 96, 0.3); }
+            0%, 100% { box-shadow: 0 0 20px rgba(233, 69, 96, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(233, 69, 96, 0.6), 0 0 80px rgba(233, 69, 96, 0.2); }
         }
-
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(40px); }
+            to { opacity: 1; transform: translateX(0); }
         }
-
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(-40px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); opacity: 1; }
+            100% { transform: scale(2.5); opacity: 0; }
+        }
         @keyframes shimmer {
             0% { background-position: -200% 0; }
             100% { background-position: 200% 0; }
         }
-
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        @keyframes morphBlob {
+            0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+            50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes dash {
+            to { stroke-dashoffset: 0; }
         }
 
-        /* Reduced Motion */
+        .animate-float { animation: float 6s ease-in-out infinite; }
+        .animate-float-slow { animation: floatSlow 8s ease-in-out infinite; }
+        .animate-glow { animation: glow 3s ease-in-out infinite; }
+        .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
+        .animate-fadeInLeft { animation: fadeInLeft 0.8s ease-out forwards; }
+        .animate-fadeInRight { animation: fadeInRight 0.8s ease-out forwards; }
+        .animate-scaleIn { animation: scaleIn 0.6s ease-out forwards; }
+        .animate-pulse-ring { animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite; }
+        .animate-morph { animation: morphBlob 8s ease-in-out infinite; }
+        .animate-rotate { animation: rotate 20s linear infinite; }
+
+        /* Stagger delays */
+        .stagger-1 { animation-delay: 0.1s; }
+        .stagger-2 { animation-delay: 0.2s; }
+        .stagger-3 { animation-delay: 0.3s; }
+        .stagger-4 { animation-delay: 0.4s; }
+        .stagger-5 { animation-delay: 0.5s; }
+        .stagger-6 { animation-delay: 0.6s; }
+
+        /* Glass morphism */
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-strong {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        /* Dark mode styles */
+        .dark body, .dark { background-color: #0f0f23; color: #e2e8f0; }
+        html:not(.dark) body, html:not(.dark) { background-color: #f8fafc; color: #1e293b; }
+        html:not(.dark) .glass { background: rgba(0, 0, 0, 0.03); border-color: rgba(0, 0, 0, 0.08); }
+        html:not(.dark) .glass-strong { background: rgba(0, 0, 0, 0.05); border-color: rgba(0, 0, 0, 0.1); }
+
+        /* Scroll animations */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .reveal-left { opacity: 0; transform: translateX(60px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal-left.active { opacity: 1; transform: translateX(0); }
+        .reveal-right { opacity: 0; transform: translateX(-60px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal-right.active { opacity: 1; transform: translateX(0); }
+
+        /* Motion safe */
         @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
+            *, *::before, *::after {
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
-                scroll-behavior: auto !important;
             }
+            .reveal, .reveal-left, .reveal-right { opacity: 1; transform: none; }
         }
 
-        /* Glass Morphism */
-        .glass {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-        }
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0f0f23; }
+        ::-webkit-scrollbar-thumb { background: #e94560; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #ff6b81; }
 
-        .dark .glass {
-            background: rgba(15, 15, 35, 0.6);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        /* Gradient Text */
-        .gradient-text {
-            background: linear-gradient(135deg, #e94560, #ff6b8a, #e94560);
-            background-size: 200% 200%;
+        /* Shimmer text */
+        .shimmer-text {
+            background: linear-gradient(90deg, #e94560 0%, #ff6b81 25%, #ffffff 50%, #ff6b81 75%, #e94560 100%);
+            background-size: 200% auto;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: gradientShift 3s ease infinite;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 4s linear infinite;
         }
 
-        /* Premium Card Hover */
-        .premium-card {
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .premium-card:hover {
-            transform: translateY(-12px) scale(1.02);
-            box-shadow: 0 30px 60px -15px rgba(233, 69, 96, 0.35);
-        }
-
-        /* Gallery Item Hover */
-        .gallery-item {
-            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .gallery-item:hover {
-            transform: scale(1.05);
-            z-index: 10;
-        }
-
-        .gallery-item:hover .gallery-overlay {
-            opacity: 1;
-        }
-
-        /* Scroll Animation Classes */
-        .scroll-animate {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .scroll-animate.animate-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Stagger Animation */
-        .stagger-1 { transition-delay: 0.1s; }
-        .stagger-2 { transition-delay: 0.2s; }
-        .stagger-3 { transition-delay: 0.3s; }
-        .stagger-4 { transition-delay: 0.4s; }
-        .stagger-5 { transition-delay: 0.5s; }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #0f0f23;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: linear-gradient(180deg, #e94560, #16213e);
-            border-radius: 4px;
-        }
-
-        /* FAQ Accordion */
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding 0.3s ease;
-        }
-
-        .faq-answer.open {
-            max-height: 500px;
-        }
-
-        .faq-icon {
-            transition: transform 0.3s ease;
-        }
-
-        .faq-item.active .faq-icon {
-            transform: rotate(45deg);
-        }
-
-        /* Mobile Menu */
-        .mobile-menu {
-            transform: translateX(100%);
-            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .mobile-menu.open {
-            transform: translateX(0);
-        }
-
-        /* Background Pattern */
-        .bg-pattern {
-            background-image: 
-                radial-gradient(circle at 25% 25%, rgba(233, 69, 96, 0.08) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(22, 33, 62, 0.15) 0%, transparent 50%);
-        }
-
-        /* Shimmer Effect */
-        .shimmer {
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            background-size: 200% 100%;
-            animation: shimmer 2s linear infinite;
-        }
-
-        /* Instagram Gradient Border */
-        .ig-border {
-            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-            padding: 3px;
-        }
-
-        .ig-border-inner {
-            background: #0f0f23;
-            border-radius: inherit;
-        }
-
-        /* Pulse Ring */
-        .pulse-ring {
+        /* Gradient border */
+        .gradient-border {
             position: relative;
         }
-
-        .pulse-ring::before {
+        .gradient-border::before {
             content: '';
             position: absolute;
-            inset: -4px;
+            inset: 0;
+            border-radius: inherit;
+            padding: 2px;
+            background: linear-gradient(135deg, #e94560, #16213e, #e94560);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        /* Lock icon pulse */
+        .lock-pulse {
+            position: relative;
+        }
+        .lock-pulse::after {
+            content: '';
+            position: absolute;
+            inset: -10px;
             border-radius: 50%;
             border: 2px solid #e94560;
-            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse-ring 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
         }
     </style>
 </head>
-<body class="bg-dark text-white overflow-x-hidden">
-    <!-- Dark Mode Toggle Button -->
-    <button id="themeToggle" class="fixed top-4 left-4 z-50 glass rounded-full p-3 hover:bg-white/10 transition-all duration-300 group" aria-label="تبديل الوضع">
-        <svg id="sunIcon" class="w-5 h-5 text-yellow-400 hidden" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
-        </svg>
-        <svg id="moonIcon" class="w-5 h-5 text-blue-300" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
-        </svg>
-    </button>
+<body class="min-h-screen overflow-x-hidden transition-colors duration-500">
 
-    <!-- Header Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-40 glass" id="header">
-        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group">
-                <div class="ig-border rounded-full pulse-ring">
-                    <div class="ig-border-inner w-10 h-10 flex items-center justify-center">
-                        <span class="text-accent font-bold text-lg">TH</span>
+    <!-- Decorative Background Elements -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0" aria-hidden="true">
+        <!-- Gradient orbs -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float"></div>
+        <div class="absolute top-1/2 -left-40 w-80 h-80 bg-secondary/20 rounded-full blur-3xl animate-float-slow" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-0 right-1/3 w-72 h-72 bg-accent/5 rounded-full blur-3xl animate-float" style="animation-delay: 4s;"></div>
+
+        <!-- Grid pattern -->
+        <svg class="absolute inset-0 w-full h-full opacity-[0.03] dark:opacity-[0.05]" aria-hidden="true">
+            <defs>
+                <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                    <path d="M 60 0 L 0 0 0 60" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+
+        <!-- Floating geometric shapes -->
+        <svg class="absolute top-20 left-10 w-16 h-16 opacity-10 animate-rotate" viewBox="0 0 100 100" aria-hidden="true">
+            <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="none" stroke="#e94560" stroke-width="1"/>
+        </svg>
+        <svg class="absolute top-1/3 right-20 w-12 h-12 opacity-10 animate-float-slow" viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="45" fill="none" stroke="#e94560" stroke-width="1" stroke-dasharray="5,5"/>
+        </svg>
+        <svg class="absolute bottom-40 left-1/4 w-20 h-20 opacity-5 animate-float" viewBox="0 0 100 100" style="animation-delay: 3s;" aria-hidden="true">
+            <rect x="15" y="15" width="70" height="70" rx="10" fill="none" stroke="#e94560" stroke-width="1" transform="rotate(45 50 50)"/>
+        </svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-strong" role="navigation" aria-label="القائمة الرئيسية">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Logo -->
+                <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center text-white font-bold text-lg sm:text-xl group-hover:scale-110 transition-transform duration-300">
+                        th
                     </div>
-                </div>
-                <span class="text-xl font-bold gradient-text hidden sm:block">@th_ni0</span>
-            </a>
+                    <span class="text-lg sm:text-xl font-bold hidden sm:block group-hover:text-accent transition-colors">@th_ni0</span>
+                </a>
 
-            <!-- Desktop Navigation -->
-            <ul class="hidden md:flex items-center gap-8">
-                <li><a href="#home" class="text-white/80 hover:text-accent transition-colors duration-300 font-medium">الرئيسية</a></li>
-                <li><a href="#about" class="text-white/80 hover:text-accent transition-colors duration-300 font-medium">من نحن</a></li>
-                <li><a href="#gallery" class="text-white/80 hover:text-accent transition-colors duration-300 font-medium">المعرض</a></li>
-                <li><a href="#faq" class="text-white/80 hover:text-accent transition-colors duration-300 font-medium">الأسئلة الشائعة</a></li>
-                <li>
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="bg-accent hover:bg-accent/90 px-6 py-2.5 rounded-full font-bold transition-all duration-300 hover:shadow-lg hover:shadow-accent/30">
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="text-sm font-medium hover:text-accent transition-colors duration-300">الرئيسية</a>
+                    <a href="#about" class="text-sm font-medium hover:text-accent transition-colors duration-300">من نحن</a>
+                    <a href="#why-follow" class="text-sm font-medium hover:text-accent transition-colors duration-300">لماذا تتابعنا</a>
+                    <a href="#follow" class="text-sm font-medium hover:text-accent transition-colors duration-300">كيف تتابعنا</a>
+                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer"
+                       class="px-5 py-2.5 bg-accent hover:bg-accent/80 text-white rounded-xl text-sm font-bold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent/30">
                         تابعنا
                     </a>
-                </li>
-            </ul>
+                    <!-- Theme Toggle -->
+                    <button id="themeToggle" class="w-10 h-10 rounded-xl glass flex items-center justify-center hover:bg-accent/10 transition-colors duration-300" aria-label="تبديل الوضع">
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                    </button>
+                </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="mobileMenuBtn" class="md:hidden text-white p-2" aria-label="القائمة">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
-            </button>
-        </nav>
-
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="mobile-menu fixed top-0 right-0 h-full w-72 bg-dark/95 backdrop-blur-xl z-50 md:hidden">
-            <div class="p-6">
-                <button id="closeMenuBtn" class="absolute top-4 left-4 text-white p-2" aria-label="إغلاق القائمة">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                    </svg>
-                </button>
-                <div class="mt-12 flex flex-col gap-6">
-                    <a href="#home" class="text-white/80 hover:text-accent transition-colors duration-300 font-medium text-lg mobile-nav-link">الرئيسية</a>
-                    <a href="#about" class="text-white/80 hover:text-accent transition-colors duration-300 font-medium text-lg mobile-nav-link">من نحن</a>
-                    <a href="#gallery" class="text-white/80 hover:text-accent transition-colors duration-300 font-medium text-lg mobile-nav-link">المعرض</a>
-                    <a href="#faq" class="text-white/80 hover:text-accent transition-colors duration-300 font-medium text-lg mobile-nav-link">الأسئلة الشائعة</a>
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="bg-accent hover:bg-accent/90 px-6 py-3 rounded-full font-bold text-center transition-all duration-300 mt-4">
-                        تابعنا على إنستغرام
-                    </a>
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center gap-3 md:hidden">
+                    <button id="themeToggleMobile" class="w-10 h-10 rounded-xl glass flex items-center justify-center hover:bg-accent/10 transition-colors duration-300" aria-label="تبديل الوضع">
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                    </button>
+                    <button id="mobileMenuBtn" class="w-10 h-10 rounded-xl glass flex items-center justify-center" aria-label="فتح القائمة" aria-expanded="false">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
-    </header>
 
-    <!-- Mobile Menu Overlay -->
-    <div id="mobileOverlay" class="fixed inset-0 bg-black/60 z-40 hidden md:hidden"></div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden glass-strong border-t border-white/5">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#home" class="block py-3 px-4 rounded-xl hover:bg-accent/10 transition-colors duration-300 font-medium">الرئيسية</a>
+                <a href="#about" class="block py-3 px-4 rounded-xl hover:bg-accent/10 transition-colors duration-300 font-medium">من نحن</a>
+                <a href="#why-follow" class="block py-3 px-4 rounded-xl hover:bg-accent/10 transition-colors duration-300 font-medium">لماذا تتابعنا</a>
+                <a href="#follow" class="block py-3 px-4 rounded-xl hover:bg-accent/10 transition-colors duration-300 font-medium">كيف تتابعنا</a>
+                <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer"
+                   class="block text-center py-3 px-4 bg-accent text-white rounded-xl font-bold hover:bg-accent/80 transition-all duration-300">
+                    تابعنا على إنستغرام
+                </a>
+            </div>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="min-h-screen flex items-center justify-center relative bg-pattern pt-20">
-            <!-- Decorative Elements -->
-            <div class="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl animate-float"></div>
-            <div class="absolute bottom-20 left-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style="animation-delay: -3s;"></div>
-            
-            <div class="container mx-auto px-4 py-20 relative z-10">
-                <div class="flex flex-col lg:flex-row items-center gap-16">
-                    <!-- Profile Card -->
-                    <div class="flex-shrink-0 scroll-animate">
-                        <div class="relative group">
-                            <!-- Glowing Background -->
-                            <div class="absolute inset-0 bg-gradient-to-r from-accent to-pink-500 rounded-full blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500 animate-glow"></div>
-                            
-                            <!-- Profile Image Placeholder -->
-                            <div class="relative ig-border rounded-full animate-float">
-                                <div class="ig-border-inner w-48 h-48 md:w-64 md:h-64 rounded-full flex items-center justify-center overflow-hidden">
-                                    <div class="w-full h-full bg-gradient-to-br from-secondary to-dark flex items-center justify-center">
-                                        <svg class="w-24 h-24 text-accent/60" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 pb-16 px-4">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <!-- Text Content -->
+                <div class="text-center lg:text-right order-2 lg:order-1">
+                    <div class="reveal">
+                        <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-accent text-sm font-medium mb-6">
+                            <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                            حساب خاص على إنستغرام
+                        </span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black mb-6 leading-tight reveal stagger-1">
+                        <span class="shimmer-text">@th_ni0</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-gray-400 dark:text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0 lg:max-w-none leading-relaxed reveal stagger-2">
+                        مرحباً بكم في عالمي الخاص. حساب إنستغرام خاص يستعد للمشاركة معكم بأفضل المحتويات.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start reveal stagger-3">
+                        <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer"
+                           class="group relative px-8 py-4 bg-accent text-white rounded-2xl font-bold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent/30">
+                            <span class="relative z-10 flex items-center justify-center gap-3">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                </svg>
+                                زيارة الحساب
+                            </span>
+                        </a>
+                        <a href="#about"
+                           class="px-8 py-4 glass rounded-2xl font-bold text-lg hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                            اعرف المزيد
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="flex items-center justify-center lg:justify-start gap-8 mt-12 reveal stagger-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-accent">0</div>
+                            <div class="text-sm text-gray-400">منشور</div>
+                        </div>
+                        <div class="w-px h-12 bg-white/10"></div>
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-accent">16</div>
+                            <div class="text-sm text-gray-400">يتابع</div>
+                        </div>
+                        <div class="w-px h-12 bg-white/10"></div>
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-accent">🔒</div>
+                            <div class="text-sm text-gray-400">خاص</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abstract Visual -->
+                <div class="order-1 lg:order-2 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        <!-- Outer ring -->
+                        <div class="absolute inset-0 rounded-full border-2 border-dashed border-accent/20 animate-rotate"></div>
+
+                        <!-- Morphing blob background -->
+                        <div class="absolute inset-4 bg-gradient-to-br from-accent/20 to-secondary/20 animate-morph"></div>
+
+                        <!-- Glass circle -->
+                        <div class="absolute inset-8 glass-strong rounded-full flex items-center justify-center animate-float">
+                            <div class="text-center">
+                                <!-- Lock icon with pulse -->
+                                <div class="relative inline-block mb-4 lock-pulse">
+                                    <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center animate-glow">
+                                        <svg class="w-10 h-10 sm:w-12 sm:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                                         </svg>
                                     </div>
                                 </div>
-                            </div>
-
-                            <!-- Online Status -->
-                            <div class="absolute bottom-4 left-4 bg-green-500 w-6 h-6 rounded-full border-4 border-dark animate-pulse"></div>
-                        </div>
-                    </div>
-
-                    <!-- Hero Content -->
-                    <div class="text-center lg:text-right flex-1 scroll-animate stagger-2">
-                        <div class="inline-block glass rounded-full px-6 py-2 mb-6">
-                            <span class="text-accent font-medium text-sm">✨ محتوى حصري ومميز</span>
-                        </div>
-                        
-                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-                            <span class="gradient-text">@th_ni0</span>
-                            <br>
-                            <span class="text-white/90 text-3xl md:text-4xl lg:text-5xl font-bold">عالم من المحتوى المميز</span>
-                        </h1>
-                        
-                        <p class="text-white/70 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 lg:max-w-none mb-10 leading-relaxed">
-                            اكتشف محتوى فريد ومميز على إنستغرام. انضم لمجتمعنا المتنامي واستمتع بمنشورات حصرية وأفكار إبداعية تلهمك كل يوم.
-                        </p>
-
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="group bg-gradient-to-r from-accent to-pink-600 hover:from-pink-600 hover:to-accent px-8 py-4 rounded-full font-bold text-lg transition-all duration-500 hover:shadow-xl hover:shadow-accent/40 flex items-center justify-center gap-3">
-                                <svg class="w-6 h-6 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                تابعنا الآن
-                                <svg class="w-5 h-5 rotate-180 transition-transform duration-300 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                </svg>
-                            </a>
-                            <a href="#about" class="glass hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 flex items-center justify-center gap-2">
-                                اعرف المزيد
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                                </svg>
-                            </a>
-                        </div>
-
-                        <!-- Stats -->
-                        <div class="flex justify-center lg:justify-start gap-8 mt-12">
-                            <div class="text-center">
-                                <div class="text-3xl font-black gradient-text">+10K</div>
-                                <div class="text-white/50 text-sm">متابع</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-black gradient-text">+500</div>
-                                <div class="text-white/50 text-sm">منشور</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-3xl font-black gradient-text">24/7</div>
-                                <div class="text-white/50 text-sm">محتوى جديد</div>
+                                <div class="text-lg sm:text-xl font-bold">حساب خاص</div>
+                                <div class="text-sm text-gray-400 mt-1">ينتظر مشاركته معكم</div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Scroll Indicator -->
-            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-                <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
-                </svg>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-24 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-b from-dark via-primary/50 to-dark"></div>
-            
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="max-w-4xl mx-auto text-center scroll-animate">
-                    <span class="inline-block text-accent font-bold text-sm mb-4 tracking-wider">من نحن</span>
-                    <h2 class="text-3xl md:text-5xl font-black mb-8">
-                        محتوى <span class="gradient-text">يُلهم</span> و <span class="gradient-text">يُثري</span>
-                    </h2>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8 mt-16">
-                    <!-- Feature 1 -->
-                    <div class="premium-card glass rounded-3xl p-8 text-center scroll-animate stagger-1">
-                        <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <!-- Floating elements -->
+                        <div class="absolute -top-4 -right-4 w-16 h-16 glass rounded-2xl flex items-center justify-center animate-float" style="animation-delay: 1s;">
                             <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 w-14 h-14 glass rounded-2xl flex items-center justify-center animate-float-slow" style="animation-delay: 2s;">
+                            <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">رؤية فريدة</h3>
-                        <p class="text-white/60 leading-relaxed">نقدم لكم محتوى بعين مختلفة، يجمع بين الإبداع والأصالة في كل منشور</p>
-                    </div>
-
-                    <!-- Feature 2 -->
-                    <div class="premium-card glass rounded-3xl p-8 text-center scroll-animate stagger-2">
-                        <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="absolute top-1/2 -right-8 w-12 h-12 glass rounded-xl flex items-center justify-center animate-float" style="animation-delay: 3s;">
+                            <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-4">محتوى بشري</h3>
-                        <p class="text-white/60 leading-relaxed">كل منشور يحمل لمسة شخصية وقصة حقيقية تربطنا بكم علاقة قوية</p>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="premium-card glass rounded-3xl p-8 text-center scroll-animate stagger-3">
-                        <div class="w-16 h-16 bg-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-4">تحديث مستمر</h3>
-                        <p class="text-white/60 leading-relaxed">نحرص على تقديم محتوى جديد وطازج بشكل منتظم ي maintaining اهتمامكم</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Gallery Section -->
-        <section id="gallery" class="py-24 relative">
-            <div class="absolute inset-0 bg-gradient-to-b from-dark to-primary/30"></div>
-            
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="text-center mb-16 scroll-animate">
-                    <span class="inline-block text-accent font-bold text-sm mb-4 tracking-wider">المعرض</span>
-                    <h2 class="text-3xl md:text-5xl font-black mb-6">
-                        لقطات من <span class="gradient-text">عالمنا</span>
-                    </h2>
-                    <p class="text-white/60 max-w-2xl mx-auto">مجموعة مختارة من أجمل المنشورات واللحظات. اضغط لزيارة المنشور الأصلي على إنستغرام</p>
-                </div>
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+            <span class="text-xs text-gray-400">اكتشف المزيد</span>
+            <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
 
-                <!-- Gallery Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <!-- Gallery Item 1 -->
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="gallery-item relative aspect-square rounded-2xl overflow-hidden group scroll-animate stagger-1">
-                        <div class="absolute inset-0 bg-gradient-to-br from-accent/80 to-pink-600/80"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/80" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M4 4h16v16H4z" fill="none"/>
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
-                            </svg>
-                        </div>
-                        <div class="gallery-overlay absolute inset-0 bg-black/60 opacity-0 flex items-center justify-center transition-opacity duration-300">
-                            <div class="text-center">
-                                <svg class="w-10 h-10 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                <span class="text-white font-bold">شاهد المنشور</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Gallery Item 2 -->
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="gallery-item relative aspect-square rounded-2xl overflow-hidden group scroll-animate stagger-2">
-                        <div class="absolute inset-0 bg-gradient-to-br from-secondary to-primary"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/80" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/>
-                            </svg>
-                        </div>
-                        <div class="gallery-overlay absolute inset-0 bg-black/60 opacity-0 flex items-center justify-center transition-opacity duration-300">
-                            <div class="text-center">
-                                <svg class="w-10 h-10 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                <span class="text-white font-bold">شاهد المنشور</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Gallery Item 3 -->
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="gallery-item relative aspect-square rounded-2xl overflow-hidden group scroll-animate stagger-3">
-                        <div class="absolute inset-0 bg-gradient-to-br from-accent/60 to-orange-500/60"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/80" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
-                            </svg>
-                        </div>
-                        <div class="gallery-overlay absolute inset-0 bg-black/60 opacity-0 flex items-center justify-center transition-opacity duration-300">
-                            <div class="text-center">
-                                <svg class="w-10 h-10 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                <span class="text-white font-bold">شاهد المنشور</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Gallery Item 4 -->
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="gallery-item relative aspect-square rounded-2xl overflow-hidden group scroll-animate stagger-4">
-                        <div class="absolute inset-0 bg-gradient-to-br from-purple-600/60 to-accent/60"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/80" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/>
-                            </svg>
-                        </div>
-                        <div class="gallery-overlay absolute inset-0 bg-black/60 opacity-0 flex items-center justify-center transition-opacity duration-300">
-                            <div class="text-center">
-                                <svg class="w-10 h-10 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                <span class="text-white font-bold">شاهد المنشور</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Gallery Item 5 -->
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="gallery-item relative aspect-square rounded-2xl overflow-hidden group scroll-animate stagger-1">
-                        <div class="absolute inset-0 bg-gradient-to-br from-blue-600/60 to-cyan-500/60"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/80" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                            </svg>
-                        </div>
-                        <div class="gallery-overlay absolute inset-0 bg-black/60 opacity-0 flex items-center justify-center transition-opacity duration-300">
-                            <div class="text-center">
-                                <svg class="w-10 h-10 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                <span class="text-white font-bold">شاهد المنشور</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Gallery Item 6 -->
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="gallery-item relative aspect-square rounded-2xl overflow-hidden group scroll-animate stagger-2">
-                        <div class="absolute inset-0 bg-gradient-to-br from-green-600/60 to-teal-500/60"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/80" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                            </svg>
-                        </div>
-                        <div class="gallery-overlay absolute inset-0 bg-black/60 opacity-0 flex items-center justify-center transition-opacity duration-300">
-                            <div class="text-center">
-                                <svg class="w-10 h-10 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                <span class="text-white font-bold">شاهد المنشور</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Gallery Item 7 -->
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="gallery-item relative aspect-square rounded-2xl overflow-hidden group scroll-animate stagger-3">
-                        <div class="absolute inset-0 bg-gradient-to-br from-yellow-600/60 to-red-500/60"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/80" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>
-                            </svg>
-                        </div>
-                        <div class="gallery-overlay absolute inset-0 bg-black/60 opacity-0 flex items-center justify-center transition-opacity duration-300">
-                            <div class="text-center">
-                                <svg class="w-10 h-10 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                <span class="text-white font-bold">شاهد المنشور</span>
-                            </div>
-                        </div>
-                    </a>
-
-                    <!-- Gallery Item 8 -->
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="gallery-item relative aspect-square rounded-2xl overflow-hidden group scroll-animate stagger-4">
-                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-600/60 to-purple-500/60"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-16 h-16 text-white/80" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/>
-                            </svg>
-                        </div>
-                        <div class="gallery-overlay absolute inset-0 bg-black/60 opacity-0 flex items-center justify-center transition-opacity duration-300">
-                            <div class="text-center">
-                                <svg class="w-10 h-10 text-white mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                <span class="text-white font-bold">شاهد المنشور</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- View More Button -->
-                <div class="text-center mt-12 scroll-animate">
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 glass hover:bg-white/10 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 group">
-                        <span>عرض المزيد على إنستغرام</span>
-                        <svg class="w-5 h-5 rotate-180 transition-transform duration-300 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+    <!-- Account Status Section -->
+    <section class="relative py-20 sm:py-28 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="reveal">
+                <div class="glass-strong rounded-3xl p-8 sm:p-12 text-center gradient-border">
+                    <!-- Decorative SVG -->
+                    <div class="mb-8">
+                        <svg class="w-20 h-20 mx-auto text-accent opacity-80" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+                            <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="2" stroke-dasharray="4,4"/>
+                            <path d="M50 25 L50 50 L65 50" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="50" cy="50" r="5" fill="currentColor"/>
                         </svg>
-                    </a>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-black mb-4">
+                        حالة الحساب
+                    </h2>
+
+                    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-accent/10 text-accent font-bold text-lg mb-8">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                        الحساب خاص (Private)
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-6 max-w-lg mx-auto mb-8">
+                        <div class="glass rounded-2xl p-6">
+                            <div class="text-3xl font-black text-accent mb-2">0</div>
+                            <div class="text-sm text-gray-400">منشور</div>
+                        </div>
+                        <div class="glass rounded-2xl p-6">
+                            <div class="text-3xl font-black text-accent mb-2">0</div>
+                            <div class="text-sm text-gray-400">متابِع</div>
+                        </div>
+                        <div class="glass rounded-2xl p-6">
+                            <div class="text-3xl font-black text-accent mb-2">16</div>
+                            <div class="text-sm text-gray-400">يتابع</div>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-400 dark:text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
+                        هذا الحساب <strong class="text-accent">خاص</strong> ولا يحتوي حالياً على أي منشورات عامة.
+                        للوصول إلى محتوى الحساب، يجب عليك طلب متابعته وانتظار الموافقة من المالك.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Why Follow Section -->
-        <section class="py-24 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-b from-primary/30 to-dark"></div>
-            
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="text-center mb-16 scroll-animate">
-                    <span class="inline-block text-accent font-bold text-sm mb-4 tracking-wider">لماذا تتابعنا</span>
-                    <h2 class="text-3xl md:text-5xl font-black mb-6">
-                        أسباب تجعلك <span class="gradient-text">تتابعنا</span>
-                    </h2>
+    <!-- About Section -->
+    <section id="about" class="relative py-20 sm:py-28 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block px-4 py-2 rounded-full glass text-accent text-sm font-medium mb-4">تعرف علينا</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-6">
+                    لماذا <span class="text-accent">هذا الحساب</span>؟
+                </h2>
+                <p class="text-gray-400 dark:text-gray-300 text-lg max-w-2xl mx-auto">
+                    حساب @th_ni0 هو مساحة خاصة لمشاركة الأفكار والمحتوى المميز
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="reveal stagger-1">
+                    <div class="glass rounded-3xl p-8 h-full hover:bg-white/10 transition-all duration-500 hover:scale-105 group">
+                        <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">خصوصية تامة</h3>
+                        <p class="text-gray-400 dark:text-gray-300 leading-relaxed">
+                            حساب خاص يضمن خصوصية المحتوى ويحدد من يمكنه الوصول إليه
+                        </p>
+                    </div>
                 </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Reason 1 -->
-                    <div class="premium-card glass rounded-3xl p-8 text-center scroll-animate stagger-1 group">
-                        <div class="w-20 h-20 bg-gradient-to-br from-accent to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                <!-- Card 2 -->
+                <div class="reveal stagger-2">
+                    <div class="glass rounded-3xl p-8 h-full hover:bg-white/10 transition-all duration-500 hover:scale-105 group">
+                        <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">محتوى حصري</h3>
-                        <p class="text-white/60 text-sm leading-relaxed">منشورات حصرية لا تجدها في أي مكان آخر</p>
+                        <h3 class="text-xl font-bold mb-3">محتوى مميز</h3>
+                        <p class="text-gray-400 dark:text-gray-300 leading-relaxed">
+                            محتوى منتقى بعناية لتقديم أفضل ما يمكن لجمهورنا المميز
+                        </p>
                     </div>
+                </div>
 
-                    <!-- Reason 2 -->
-                    <div class="premium-card glass rounded-3xl p-8 text-center scroll-animate stagger-2 group">
-                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">تحديثات يومية</h3>
-                        <p class="text-white/60 text-sm leading-relaxed">محتوى جديد كل يوم يبقيك على اطلاع دائم</p>
-                    </div>
-
-                    <!-- Reason 3 -->
-                    <div class="premium-card glass rounded-3xl p-8 text-center scroll-animate stagger-3 group">
-                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-400 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <!-- Card 3 -->
+                <div class="reveal stagger-3">
+                    <div class="glass rounded-3xl p-8 h-full hover:bg-white/10 transition-all duration-500 hover:scale-105 group">
+                        <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">مجتمع متفاعل</h3>
-                        <p class="text-white/60 text-sm leading-relaxed">انضم لمجتمع من المتابعين المتفاعلين والمحبين</p>
+                        <h3 class="text-xl font-bold mb-3">مجتمع مميز</h3>
+                        <p class="text-gray-400 dark:text-gray-300 leading-relaxed">
+                            الانضمام لمجتمع مغلق من الأشخاص المميزين المهتمين بالمحتوى الفريد
+                        </p>
                     </div>
+                </div>
 
-                    <!-- Reason 4 -->
-                    <div class="premium-card glass rounded-3xl p-8 text-center scroll-animate stagger-4 group">
-                        <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-500">
-                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                <!-- Card 4 -->
+                <div class="reveal stagger-4">
+                    <div class="glass rounded-3xl p-8 h-full hover:bg-white/10 transition-all duration-500 hover:scale-105 group">
+                        <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">جودة عالية</h3>
-                        <p class="text-white/60 text-sm leading-relaxed">محتوى مُنتج بعناية عالية الجودة والتفاصيل</p>
+                        <h3 class="text-xl font-bold mb-3">تحديثات مستمرة</h3>
+                        <p class="text-gray-400 dark:text-gray-300 leading-relaxed">
+                            محتوى جديد بشكل منتظم يبقيكم على اطلاع بأحدث المحتويات
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="reveal stagger-5">
+                    <div class="glass rounded-3xl p-8 h-full hover:bg-white/10 transition-all duration-500 hover:scale-105 group">
+                        <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">أمان وموثوقية</h3>
+                        <p class="text-gray-400 dark:text-gray-300 leading-relaxed">
+                            بيئة آمنة وموثوقة لتبادل المحتوى والتفاعل بشكل إيجابي
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="reveal stagger-6">
+                    <div class="glass rounded-3xl p-8 h-full hover:bg-white/10 transition-all duration-500 hover:scale-105 group">
+                        <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                            <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">شغف حقيقي</h3>
+                        <p class="text-gray-400 dark:text-gray-300 leading-relaxed">
+                            شغف حقيقي بالمحتوى والمشاركة يظهر في كل منشور وتفاعل
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- How to Follow Steps -->
-        <section class="py-24 relative">
-            <div class="absolute inset-0 bg-gradient-to-b from-dark to-primary/30"></div>
-            
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="text-center mb-16 scroll-animate">
-                    <span class="inline-block text-accent font-bold text-sm mb-4 tracking-wider">خطوات بسيطة</span>
-                    <h2 class="text-3xl md:text-5xl font-black mb-6">
-                        كيف <span class="gradient-text">تتابعنا</span>
-                    </h2>
+    <!-- Why Follow Section -->
+    <section id="why-follow" class="relative py-20 sm:py-28 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block px-4 py-2 rounded-full glass text-accent text-sm font-medium mb-4">المميزات</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-6">
+                    لماذا يجب أن <span class="text-accent">تتابعنا</span>؟
+                </h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Reason 1 -->
+                <div class="reveal-left">
+                    <div class="glass rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/5 transition-all duration-500">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center flex-shrink-0 text-2xl font-black text-white">
+                            01
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">محتوى حصري</h3>
+                            <p class="text-gray-400 dark:text-gray-300">ستحصل على محتوى حصري لا يتوفر في أي مكان آخر</p>
+                        </div>
+                        <div class="hidden sm:block">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="max-w-4xl mx-auto">
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <!-- Step 1 -->
-                        <div class="relative scroll-animate stagger-1">
-                            <div class="glass rounded-3xl p-8 text-center h-full">
-                                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">1</div>
-                                <h3 class="text-xl font-bold mb-3">افتح إنستغرام</h3>
-                                <p class="text-white/60 leading-relaxed">افتح تطبيق إنستغرام على هاتفك أو افتح الموقع على جهازك</p>
-                            </div>
-                            <!-- Connector -->
-                            <div class="hidden md:block absolute top-1/2 -left-4 w-8 h-0.5 bg-accent/50"></div>
+                <!-- Reason 2 -->
+                <div class="reveal-right">
+                    <div class="glass rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/5 transition-all duration-500">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center flex-shrink-0 text-2xl font-black text-white">
+                            02
                         </div>
-
-                        <!-- Step 2 -->
-                        <div class="relative scroll-animate stagger-2">
-                            <div class="glass rounded-3xl p-8 text-center h-full">
-                                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">2</div>
-                                <h3 class="text-xl font-bold mb-3">ابحث عن الحساب</h3>
-                                <p class="text-white/60 leading-relaxed">اكتب @th_ni0 في خانة البحث أو اضغط على زر التابعنا أدناه</p>
-                            </div>
-                            <!-- Connector -->
-                            <div class="hidden md:block absolute top-1/2 -left-4 w-8 h-0.5 bg-accent/50"></div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">تواصل مباشر</h3>
+                            <p class="text-gray-400 dark:text-gray-300">تواصل مباشر مع مالك الحساب والتفاعل مع المحتوى</p>
                         </div>
+                        <div class="hidden sm:block">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
 
-                        <!-- Step 3 -->
-                        <div class="scroll-animate stagger-3">
-                            <div class="glass rounded-3xl p-8 text-center h-full">
-                                <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-black">3</div>
-                                <h3 class="text-xl font-bold mb-3">اضغط متابعة</h3>
-                                <p class="text-white/60 leading-relaxed">اضغط على زر "متابعة" وفعّل الإشعارات لتكون أول من يعرف بالمنشورات الجديدة</p>
+                <!-- Reason 3 -->
+                <div class="reveal-left">
+                    <div class="glass rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/5 transition-all duration-500">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center flex-shrink-0 text-2xl font-black text-white">
+                            03
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">مجتمع مغلق</h3>
+                            <p class="text-gray-400 dark:text-gray-300">انضم لمجتمع مميز من الأشخاص الذين يشاركونك الاهتمامات</p>
+                        </div>
+                        <div class="hidden sm:block">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reason 4 -->
+                <div class="reveal-right">
+                    <div class="glass rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:bg-white/5 transition-all duration-500">
+                        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center flex-shrink-0 text-2xl font-black text-white">
+                            04
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold mb-2">☵ مستقبل مشرق</h3>
+                            <p class="text-gray-400 dark:text-gray-300">كن من أول المتابعين واحصل على مزايا خاصة عند إعلان المحتوى</p>
+                        </div>
+                        <div class="hidden sm:block">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Follow Steps -->
+    <section id="follow" class="relative py-20 sm:py-28 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block px-4 py-2 rounded-full glass text-accent text-sm font-medium mb-4">الخطوات</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-6">
+                    كيف يمكنك <span class="text-accent">تتبعنا</span>؟
+                </h2>
+                <p class="text-gray-400 dark:text-gray-300 text-lg">
+                    ثلاث خطوات بسيطة للانضمام لقائمة متابعينا
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting line -->
+                <div class="absolute top-0 bottom-0 right-[39px] sm:right-1/2 w-0.5 bg-gradient-to-b from-accent via-accent/50 to-transparent hidden sm:block" aria-hidden="true"></div>
+
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="reveal">
+                        <div class="flex flex-col sm:flex-row items-center gap-6">
+                            <div class="flex-shrink-0 order-2 sm:order-1">
+                                <div class="relative">
+                                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center text-white text-3xl font-black animate-glow">
+                                        1
+                                    </div>
+                                    <div class="absolute inset-0 rounded-full bg-accent/30 animate-pulse-ring"></div>
+                                </div>
+                            </div>
+                            <div class="flex-1 order-1 sm:order-2 glass rounded-3xl p-8 text-center sm:text-right">
+                                <h3 class="text-2xl font-bold mb-3">زر الحساب</h3>
+                                <p class="text-gray-400 dark:text-gray-300 mb-4">
+                                    قم بزيارة حسابنا على إنستغرام عبر الرابط المباشر
+                                </p>
+                                <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer"
+                                   class="inline-flex items-center gap-2 text-accent font-bold hover:underline">
+                                    instagram.com/th_ni0
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- CTA Button -->
-                    <div class="text-center mt-12 scroll-animate">
-                        <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-gradient-to-r from-accent to-pink-600 hover:from-pink-600 hover:to-accent px-10 py-5 rounded-full font-bold text-xl transition-all duration-500 hover:shadow-xl hover:shadow-accent/40 group">
-                            <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    <!-- Step 2 -->
+                    <div class="reveal">
+                        <div class="flex flex-col sm:flex-row items-center gap-6">
+                            <div class="flex-shrink-0">
+                                <div class="relative">
+                                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center text-white text-3xl font-black animate-glow" style="animation-delay: 0.5s;">
+                                        2
+                                    </div>
+                                    <div class="absolute inset-0 rounded-full bg-accent/30 animate-pulse-ring" style="animation-delay: 0.5s;"></div>
+                                </div>
+                            </div>
+                            <div class="flex-1 glass rounded-3xl p-8 text-center sm:text-right">
+                                <h3 class="text-2xl font-bold mb-3">اضغط متابعة</h3>
+                                <p class="text-gray-400 dark:text-gray-300 mb-4">
+                                    اضغط على زر "متابعة" لإرسال طلب متابعة لمالك الحساب
+                                </p>
+                                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-medium">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                                    </svg>
+                                    طلب متابعة
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="reveal">
+                        <div class="flex flex-col sm:flex-row items-center gap-6">
+                            <div class="flex-shrink-0 order-2 sm:order-1">
+                                <div class="relative">
+                                    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center text-white text-3xl font-black animate-glow" style="animation-delay: 1s;">
+                                        3
+                                    </div>
+                                    <div class="absolute inset-0 rounded-full bg-accent/30 animate-pulse-ring" style="animation-delay: 1s;"></div>
+                                </div>
+                            </div>
+                            <div class="flex-1 order-1 sm:order-2 glass rounded-3xl p-8 text-center sm:text-right">
+                                <h3 class="text-2xl font-bold mb-3">انتظر الموافقة</h3>
+                                <p class="text-gray-400 dark:text-gray-300 mb-4">
+                                    بمجرد الموافقة على طلبك، ستتمكن من رؤية جميع المحتويات الحصرية
+                                </p>
+                                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 text-green-400 text-sm font-medium">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    في انتظارك
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-20 sm:py-28 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="reveal">
+                <div class="relative rounded-3xl overflow-hidden">
+                    <!-- Background gradient -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-accent via-pink-600 to-accent"></div>
+                    <div class="absolute inset-0 opacity-10">
+                        <svg class="w-full h-full" aria-hidden="true">
+                            <defs>
+                                <pattern id="ctaGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                    <circle cx="20" cy="20" r="1" fill="white"/>
+                                </pattern>
+                            </defs>
+                            <rect width="100%" height="100%" fill="url(#ctaGrid)"/>
+                        </svg>
+                    </div>
+
+                    <div class="relative px-8 py-16 sm:px-16 sm:py-20 text-center text-white">
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mb-6">
+                            جاهز للمتابعة؟
+                        </h2>
+                        <p class="text-lg sm:text-xl opacity-90 mb-10 max-w-2xl mx-auto">
+                            لا تفوت الفرصة لتكون من أول المتابعين. قم بطلب المتابعة الآن وكن جزءاً من مجتمعنا الخاص.
+                        </p>
+
+                        <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-3 px-10 py-5 bg-white text-accent rounded-2xl font-black text-xl hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                             </svg>
-                            تابعنا الآن على @th_ni0
-                            <svg class="w-6 h-6 rotate-180 transition-transform duration-300 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                            </svg>
+                            تابعنا على إنستغرام
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="py-24 relative">
-            <div class="absolute inset-0 bg-gradient-to-b from-primary/30 to-dark"></div>
-            
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="text-center mb-16 scroll-animate">
-                    <span class="inline-block text-accent font-bold text-sm mb-4 tracking-wider">الأسئلة الشائعة</span>
-                    <h2 class="text-3xl md:text-5xl font-black mb-6">
-                        أسئلة <span class="gradient-text">متكررة</span>
-                    </h2>
-                </div>
-
-                <div class="max-w-3xl mx-auto space-y-4">
-                    <!-- FAQ Item 1 -->
-                    <div class="faq-item glass rounded-2xl overflow-hidden scroll-animate stagger-1">
-                        <button class="faq-question w-full px-6 py-5 text-right flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-300">
-                            <span class="font-bold text-lg">ما نوع المحتوى الذي تقدمه على الحساب؟</span>
-                            <svg class="faq-icon w-6 h-6 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-6">
-                            <p class="text-white/60 pb-5 leading-relaxed">نقدم محتوى متنوع وفريد يشمل صوراً إبداعية، فيديوهات قصيرة، قصة يومية، وتفاعل مباشر مع المتابعين. نحرص على تقديم محتوى يلهم ويرفع معنوياتeveryone يتابعنا.</p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 2 -->
-                    <div class="faq-item glass rounded-2xl overflow-hidden scroll-animate stagger-2">
-                        <button class="faq-question w-full px-6 py-5 text-right flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-300">
-                            <span class="font-bold text-lg">كم مرة تنشرون محتوى جديد؟</span>
-                            <svg class="faq-icon w-6 h-6 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-6">
-                            <p class="text-white/60 pb-5 leading-relaxed">نحرص على نشر محتوى جديد بشكل منتظم يومياً أو كل يومين. كما نشارك يومياتنا و Updates مباشرة عبر خاصية القصص (Stories).</p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 3 -->
-                    <div class="faq-item glass rounded-2xl overflow-hidden scroll-animate stagger-3">
-                        <button class="faq-question w-full px-6 py-5 text-right flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-300">
-                            <span class="font-bold text-lg">هل يمكنني التواصل معكم عبر الحساب؟</span>
-                            <svg class="faq-icon w-6 h-6 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-6">
-                            <p class="text-white/60 pb-5 leading-relaxed">بالتأكيد! نحب التواصل مع متابعينا. يمكنك إرسال رسالة مباشرة (DM) أو التعليق على المنشورات. نسعى للرد على جميع الرسائل في أقرب وقت ممكن.</p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 4 -->
-                    <div class="faq-item glass rounded-2xl overflow-hidden scroll-animate stagger-4">
-                        <button class="faq-question w-full px-6 py-5 text-right flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-300">
-                            <span class="font-bold text-lg">هل تقبلون التعاون مع الحسابات الأخرى؟</span>
-                            <svg class="faq-icon w-6 h-6 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-6">
-                            <p class="text-white/60 pb-5 leading-relaxed">نعم، نرحب بالتعاون مع الحسابات والعلامات التجارية المتوافقة مع رؤيتنا. للتواصل بخصوص التعاون، يرجى إرسال رسالة مباشرة مع تفاصيل مقترحك.</p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 5 -->
-                    <div class="faq-item glass rounded-2xl overflow-hidden scroll-animate stagger-5">
-                        <button class="faq-question w-full px-6 py-5 text-right flex items-center justify-between gap-4 hover:bg-white/5 transition-colors duration-300">
-                            <span class="font-bold text-lg">كيف أحصل على إشعار عند نشر محتوى جديد؟</span>
-                            <svg class="faq-icon w-6 h-6 text-accent flex-shrink-0 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
-                            </svg>
-                        </button>
-                        <div class="faq-answer px-6">
-                            <p class="text-white/60 pb-5 leading-relaxed">بعد متابعة الحساب، اضغط على زر الجرس (🔔) الموجود بجانب زر المتابعة واختر "تجميع كل المنشورات" لتتلقى إشعاراً عند كل منشور جديد.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-24 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-r from-accent/20 via-dark to-accent/20"></div>
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-accent/10 rounded-full blur-3xl"></div>
-            
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="max-w-4xl mx-auto text-center scroll-animate">
-                    <div class="glass rounded-3xl p-12 md:p-16">
-                        <div class="inline-block bg-accent/20 rounded-full px-6 py-2 mb-6">
-                            <span class="text-accent font-bold text-sm">🚀 انضم الآن</span>
-                        </div>
-                        
-                        <h2 class="text-3xl md:text-5xl font-black mb-6">
-                            لا تفوّت <span class="gradient-text">أي محتوى</span>
-                        </h2>
-                        
-                        <p class="text-white/70 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-                            كن أول من يعرف بالمنشورات الجديدة. تابعنا الآن على إنستغرام واستمتع بمحتوى حصري يلهمك يومياً.
-                        </p>
-
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                            <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="group bg-gradient-to-r from-accent to-pink-600 hover:from-pink-600 hover:to-accent px-10 py-5 rounded-full font-bold text-xl transition-all duration-500 hover:shadow-xl hover:shadow-accent/40 flex items-center justify-center gap-3">
-                                <svg class="w-7 h-7 transition-transform duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                تابعنا @th_ni0
-                            </a>
-                            <a href="#home" class="glass hover:bg-white/10 px-10 py-5 rounded-full font-bold text-xl transition-all duration-300 flex items-center justify-center gap-2">
-                                العودة للأعلى
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-white/10">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+    <footer class="relative py-12 px-4 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col items-center gap-8">
                 <!-- Logo -->
-                <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 group">
-                    <div class="ig-border rounded-full">
-                        <div class="ig-border-inner w-10 h-10 flex items-center justify-center">
-                            <span class="text-accent font-bold text-lg">TH</span>
-                        </div>
+                <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-pink-600 flex items-center justify-center text-white font-bold text-xl group-hover:scale-110 transition-transform duration-300">
+                        th
                     </div>
-                    <span class="text-xl font-bold gradient-text">@th_ni0</span>
                 </a>
 
                 <!-- Social Links -->
                 <div class="flex items-center gap-4">
-                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 glass rounded-full flex items-center justify-center hover:bg-accent/20 transition-all duration-300 group" aria-label="إنستغرام">
-                        <svg class="w-6 h-6 text-white group-hover:text-accent transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer"
+                       class="w-12 h-12 glass rounded-xl flex items-center justify-center hover:bg-accent/20 transition-all duration-300 hover:scale-110 group"
+                       aria-label="Instagram">
+                        <svg class="w-6 h-6 text-gray-400 group-hover:text-accent transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                         </svg>
                     </a>
                 </div>
 
                 <!-- Copyright -->
-                <p class="text-white/50 text-sm">
-                    © 2026 <a href="https://www.instagram.com/th_ni0/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent/80 transition-colors">@th_ni0</a>. جميع الحقوق محفوظة.
-                </p>
+                <div class="text-center">
+                    <p class="text-sm text-gray-500">
+                        &copy; 2026 @th_ni0 — جميع الحقوق محفوظة
+                    </p>
+                    <p class="text-xs text-gray-600 mt-2">
+                        حساب خاص على إنستغرام
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Back to Top -->
+    <button id="backToTop" class="fixed bottom-6 left-6 w-12 h-12 glass rounded-xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:bg-accent/20 hover:scale-110 z-40" aria-label="العودة للأعلى">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+        </svg>
+    </button>
+
     <script>
-        // Mobile Menu Toggle
+        // Theme Toggle
+        const html = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle');
+        const themeToggleMobile = document.getElementById('themeToggleMobile');
+
+        function toggleTheme() {
+            html.classList.toggle('dark');
+            localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+        }
+
+        themeToggle?.addEventListener('click', toggleTheme);
+        themeToggleMobile?.addEventListener('click', toggleTheme);
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            html.classList.remove('dark');
+        }
+
+        // Mobile Menu
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const closeMenuBtn = document.getElementById('closeMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
-        const mobileOverlay = document.getElementById('mobileOverlay');
-        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-        function openMobileMenu() {
-            mobileMenu.classList.add('open');
-            mobileOverlay.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeMobileMenu() {
-            mobileMenu.classList.remove('open');
-            mobileOverlay.classList.add('hidden');
-            document.body.style.overflow = '';
-        }
-
-        mobileMenuBtn.addEventListener('click', openMobileMenu);
-        closeMenuBtn.addEventListener('click', closeMobileMenu);
-        mobileOverlay.addEventListener('click', closeMobileMenu);
-
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', closeMobileMenu);
+        mobileMenuBtn?.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', isOpen);
         });
 
-        // FAQ Accordion
-        const faqItems = document.querySelectorAll('.faq-item');
-
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            const answer = item.querySelector('.faq-answer');
-
-            question.addEventListener('click', () => {
-                const isOpen = item.classList.contains('active');
-
-                // Close all FAQ items
-                faqItems.forEach(otherItem => {
-                    otherItem.classList.remove('active');
-                    otherItem.querySelector('.faq-answer').classList.remove('open');
-                });
-
-                // Toggle current item
-                if (!isOpen) {
-                    item.classList.add('active');
-                    answer.classList.add('open');
-                }
+        // Close mobile menu on link click
+        mobileMenu?.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
             });
         });
 
-        // Scroll Animations with IntersectionObserver
-        const scrollAnimateElements = document.querySelectorAll('.scroll-animate');
-
+        // Scroll Reveal with IntersectionObserver
         const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
         };
 
-        const scrollObserver = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-in');
-                    scrollObserver.unobserve(entry.target);
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
 
-        scrollAnimateElements.forEach(element => {
-            scrollObserver.observe(element);
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+            observer.observe(el);
         });
 
-        // Header Scroll Effect
-        const header = document.getElementById('header');
-        let lastScrollY = window.scrollY;
+        // Back to Top
+        const backToTop = document.getElementById('backToTop');
 
         window.addEventListener('scroll', () => {
-            const currentScrollY = window.scrollY;
-            
-            if (currentScrollY > 100) {
-                header.classList.add('bg-dark/90', 'shadow-lg', 'shadow-black/20');
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('opacity-0', 'pointer-events-none');
+                backToTop.classList.add('opacity-100', 'pointer-events-auto');
             } else {
-                header.classList.remove('bg-dark/90', 'shadow-lg', 'shadow-black/20');
-            }
-
-            lastScrollY = currentScrollY;
-        });
-
-        // Dark/Light Mode Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const sunIcon = document.getElementById('sunIcon');
-        const moonIcon = document.getElementById('moonIcon');
-        const html = document.documentElement;
-
-        // Check for saved theme preference or default to dark
-        const savedTheme = localStorage.getItem('theme') || 'dark';
-        if (savedTheme === 'light') {
-            html.classList.remove('dark');
-            sunIcon.classList.remove('hidden');
-            moonIcon.classList.add('hidden');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            if (html.classList.contains('dark')) {
-                html.classList.remove('dark');
-                sunIcon.classList.remove('hidden');
-                moonIcon.classList.add('hidden');
-                localStorage.setItem('theme', 'light');
-            } else {
-                html.classList.add('dark');
-                sunIcon.classList.add('hidden');
-                moonIcon.classList.remove('hidden');
-                localStorage.setItem('theme', 'dark');
+                backToTop.classList.add('opacity-0', 'pointer-events-none');
+                backToTop.classList.remove('opacity-100', 'pointer-events-auto');
             }
         });
 
-        // Smooth Scroll for anchor links
+        backToTop?.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
-            });
-        });
-
-        // Parallax Effect for Decorative Elements
-        window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY;
-            const decorativeElements = document.querySelectorAll('.animate-float');
-            
-            decorativeElements.forEach((el, index) => {
-                const speed = (index + 1) * 0.1;
-                el.style.transform = `translateY(${scrolled * speed}px)`;
             });
         });
     </script>
