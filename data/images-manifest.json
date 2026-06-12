@@ -1,12 +1,14 @@
 {
   "images": [],
   "profile_image": {
-    "file_name": "profile.jpg",
-    "original_source": "https://www.instagram.com/th_ni0/",
+    "file_name": null,
+    "original_source": null,
     "type": "profile",
-    "caption_or_note": "صورة البروفايل - غير متوفرة حالياً",
-    "relevance_score": 1.0,
-    "suggested_section": "header"
+    "caption_or_note": "صورة البروفايل غير متوفرة - الحساب خاص",
+    "relevance_score": 0,
+    "suggested_section": "header",
+    "available": false
   },
-  "notes": "لم يتمكن النظام من تنزيل صور due to Instagram access restrictions"
+  "total_images": 0,
+  "notes": "لا توجد صور متاحة - الحساب خاص (Private) بدون منشورات عامة"
 }

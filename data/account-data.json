@@ -3,10 +3,11 @@
     "username": "th_ni0",
     "display_name": "th_ni0",
     "instagram_url": "https://www.instagram.com/th_ni0/",
-    "bio": "حساب عام على إنستقرام",
-    "followers": "غير متوفر",
-    "following": "غير متوفر",
-    "posts_count": "غير متوفر"
+    "bio": "الحساب خاص - لا تتوفر بيانات عامة",
+    "followers": 0,
+    "following": 16,
+    "posts_count": 0,
+    "account_status": "private"
   },
   "contact_info": {
     "phone": "غير متوفر",
@@ -19,9 +20,16 @@
     "city": "غير محدد"
   },
   "niche_analysis": {
-    "primary_niche": "عام",
-    "sub_niches": ["حساب شخصي"],
-    "content_type": "متنوع"
+    "primary_niche": "حساب شخصي خاص",
+    "sub_niches": [],
+    "content_type": "لا يوجد محتوى عام"
   },
-  "notes": "بيانات محدودة due to Instagram access restrictions"
+  "media_availability": {
+    "profile_picture": false,
+    "posts_images": 0,
+    "posts_videos": 0,
+    "stories": false,
+    "highlights": false
+  },
+  "notes": "الحساب خاص (Private) - لا توجد بيانات أو محتوى عام متاح للتحميل"
 }

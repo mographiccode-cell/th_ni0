@@ -1,7 +1,7 @@
 {
   "username": "th_ni0",
   "display_name": "th_ni0",
-  "logo_source": "inferred",
+  "logo_source": "wordmark",
   "logo_type": "wordmark",
   "brand_colors": {
     "primary_color": "#1a1a2e",
@@ -11,10 +11,18 @@
     "text_color": "#ffffff"
   },
   "typography_direction": "rtl",
-  "visual_style": "عصرية وبسيطة",
+  "visual_style": "عصرية وبسيطة - مبنية على الافتراضات بسبب خصوصية الحساب",
   "tone_of_voice": "مهني وودود",
-  "imagery_style": "صور بسيطة ونظيفة مع تركيز على المحتوى",
-  "layout_notes": "تصميم حديث مع تأثيرات أنيميشن ناعمة",
-  "identity_confidence": "متوسط - تم الاستنتاج من اسم الحساب",
-  "identity_notes": "تم بناء الهوية بناءً على التحليل العام للحساب. يمكن تحسين هذه الهوية عند توفر معلومات إضافية."
+  "imagery_style": "لا توجد صور - الحساب خاص",
+  "layout_notes": "تصميم حديث مع تأثيرات أنيميشن ناعمة - مبنية على الافتراضات",
+  "identity_confidence": "منخفض جداً - الحساب خاص بدون منشورات",
+  "identity_notes": "الحساب خاص ولا يحتوي على أي منشورات. تم بناء الهوية بناءً على الافتراضات العامة. لا يمكن استخراج الهوية البصرية الحقيقية بسبب الخصوصية.",
+  "account_status": "private",
+  "available_content": {
+    "profile_picture": false,
+    "posts": 0,
+    "stories": false,
+    "highlights": false,
+    "videos": 0
+  }
 }
